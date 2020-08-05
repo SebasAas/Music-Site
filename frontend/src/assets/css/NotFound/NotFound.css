@@ -1,0 +1,55 @@
+.notfound__image {
+  background-image: url("../../images/NotFound/MusicNotFound.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed; 
+  height: 100vh;
+  width: auto;
+}
+
+.notfound__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.notfound__description__container > h2 {
+  font-family: 'Roboto', Arial, sans-serif;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+
+.notfound__description__container > h3 {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 0px) and (max-width: 580px) {
+
+  .notfound__description {
+    background-image: url("../../images/NotFound/MusicNotFound.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed; 
+    height: 100vh;
+    width: auto;
+  }
+
+  .notfound__description__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 450px;
+    width: 90vw;
+    opacity: 0.9;
+    padding: 10px;
+  }
+
+}
+

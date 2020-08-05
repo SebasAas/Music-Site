@@ -1,0 +1,14 @@
+.form__table {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__table > h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: black !important;
+  font-size: 28px !important;
+  letter-spacing: 2px !important;
+}

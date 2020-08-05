@@ -1,0 +1,31 @@
+.profile__page__header {
+  background-color: black !important;
+}
+
+.profile__page__background {
+  background: linear-gradient(90deg, #EFB201, #faa307 ,#f48c06 ,#e85d04 );
+  height: auto;
+  width: 100%;
+}
+
+.profile__page__container {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__page__image__container{
+  margin-top: 70px;
+  width: 100%;
+  /* background-image: url('../../images/Email/girl.jpg'); */
+  /* background-attachment: fixed; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+
+.profile__page__image {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+}

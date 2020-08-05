@@ -1,0 +1,266 @@
+.banner__main__container {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  background-color: #EFB201 !important;
+}
+
+.banner__background__text {
+  background: linear-gradient(90deg, #EFB201, #faa307 ,#f48c06 ,#e85d04 );
+  height: 100vh;
+}
+
+.banner__total__image {
+  background-image: url("https://content.thriveglobal.com/wp-content/uploads/2018/07/Music.jpeg");
+  background-size: cover;
+  background-position: center; 
+  height: 100vh; 
+  box-shadow: 0 0 40px 30px #EFB201 inset
+}
+
+.banner__container {
+  color: #fff;
+  height: 100vh;
+}
+
+.banner__row {
+  padding-top: 40px;
+}
+
+.center__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__container__title > h1 {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.banner__section__image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  opacity: 1;
+  transition: opacity 0.6s linear;
+}
+
+.banner__section__image__back {
+  opacity: 0;
+  background-color: transparent;
+  position: absolute
+}
+
+.banner__section__button:hover > img{
+  opacity: 0;
+  background-color: transparent
+}
+
+.banner__section__button:hover > div{
+  position: absolute;
+  background-image: linear-gradient(-45deg, #f4845f, #e63462);
+  display: flex;
+  color: #e9ecef;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.6s linear;
+}
+
+@media (min-width: 0px) and (max-width: 560px) {
+  .banner__section {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: inherit;
+    margin-top: 20px;
+  }
+  
+  .banner__section__div {
+    display: flex;
+  }
+
+  .banner__container__title {
+    border: 1.5px solid #fff;
+    padding: 10px;
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .banner__section__button {
+    margin: 2vw;
+    height: 170px;
+    width: 170px;
+    border: none;
+    position: relative;
+    display: flex;
+  }
+
+  .banner__section__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner__container__paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 561px) and (max-width: 991px) {
+  .banner__section {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: inherit;
+    margin-top: 20px;
+  }
+
+  .banner__section__div {
+    display: flex;
+  }
+  
+  .banner__container__title {
+    border: 1.5px solid #fff;
+    padding: 10px;
+    margin-top: 90px;
+  }
+
+  .banner__container__paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem !important;
+    letter-spacing: 1.5px;
+    width: 700px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .banner__section__button {
+    margin: 2vw;
+    height: 150px;
+    width: 150px;
+    border: none;
+    position: relative;
+    display: flex;
+  }
+
+  .banner__section__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner__container__paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    width: 600px;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .banner__section {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .banner__section__div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner__container__title {
+    border: 1.5px solid #fff;
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+  .banner__section__button {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    margin-bottom: 1.5vw;
+    margin-top: 0.5vw;
+    height: 140px;
+    width: 140px;
+    border: none;
+    position: relative;
+    display: flex;
+  }
+
+  .banner__section__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner__container__paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    width: 800px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner__section {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .banner__section__div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner__container__title {
+    border: 1.5px solid #fff;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+
+  .banner__section__button {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    margin-bottom: 1.5vw;
+    margin-left: 1vw;
+    height: 150px;
+    width: 150px;
+    border: none;
+    position: relative;
+    display: flex;
+  }
+
+  .banner__section__image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .banner__container__paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    letter-spacing: 1.5px;
+    width: 900px;
+    margin-top: 30px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,28 @@
+.emailconfirmed__container__message {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.emailconfirmed__message {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+  width: 700px;
+}
+
+.emailconfirmed__btn {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid tomato;
+  border-radius: 40px;
+  background-color: transparent;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.emailconfirmed__btn > a {
+  text-decoration: none;
+  color: rgb(39, 39, 39);
+}
