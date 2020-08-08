@@ -3,36 +3,47 @@ const passport = require('passport');
 
 const router = Router();
 
-// User Routes
-const {
-  findUser, findOneUser, addUser, confirmUser, updateUser, deleteUser,
-} = require('../controllers/userController');
-
 // Auth Routes
 const {
   loginUser, checkJWT, userInfo
 } = require('../controllers/authController');
 
-// Test 
-router.post('/test', checkJWT, userInfo)
+// User Routes
+const {
+  findUser, findOneUser, addUser, confirmUser, updateUser, deleteUser,
+} = require('../controllers/userController');
 
-// Find Users
-router.get('/user/find', checkJWT, findUser);
-router.get('/user/find/:data', findOneUser);
+// Album Routes
+const {
+  findAlbums, findOneAlbum
+} = require('../controllers/albumController');
 
-// Create User
-router.post('/user/add', addUser);
+module.exports = () => {
 
-// Confirm User
-router.post('/user/confirm', confirmUser);
+  // Login User
+  router.post('/login', loginUser);
 
-// Login User
-router.post('/login', loginUser);
+  // Confirm User Email
+  router.post('/user/confirm', confirmUser);
 
-// Update User
-router.put('/user/update/:document', updateUser);
+  // Find Users
+  router.get('/user/find', checkJWT, findUser);
+  router.get('/user/find/:data', findOneUser);
 
-// Delete User
-router.delete('/user/delete/:document', deleteUser);
+  // Create User
+  router.post('/user/add', addUser);
 
-module.exports = router;
+  // Update User
+  router.put('/user/update/:document', updateUser);
+
+  // Delete User
+  router.delete('/user/delete/:document', deleteUser);
+
+  // Find Album
+  router.get('/album/find', findAlbums);
+
+  // Find Album
+  router.get('/album/find/:data', findOneAlbum);
+
+  return router;
+}

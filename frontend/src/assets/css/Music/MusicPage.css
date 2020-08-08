@@ -1,0 +1,17 @@
+.music__page__container {
+  height: 100vh;
+  padding: 0 !important;
+  display: flex;
+}
+
+.music__page__sidebar__container {
+  background-color: #121212;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.music__page__music__container {
+  height: 100vh;
+  background: linear-gradient(130deg, #ff2995, #ff3d7f, #ff6655, #FF5F65)
+}

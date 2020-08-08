@@ -28,11 +28,11 @@ function ProfilePage({ user }) {
       axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/find/${user.currentUser.email}`, { headers })
         .then((res) => {
           setIsLoggedIn(true);
-          console.log(res);
+          // console.log(res);
         })
         .catch((err) => {
           setIsLoggedIn(false)
-          console.log(err.response);
+          // console.log(err.response);
         });
     } else {
       return (
@@ -64,8 +64,6 @@ function ProfilePage({ user }) {
       :
 
       <p></p>
-
-
   )
 
 }

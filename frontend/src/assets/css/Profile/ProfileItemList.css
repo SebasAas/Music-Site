@@ -1,0 +1,58 @@
+@media (min-width: 0px) and (max-width: 767px){ 
+  .profile__item__list__container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile__item__list__data__container {
+    width: 100%;
+  }
+  
+  .profile__item__list__data {
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  .profile__item__list__separator {
+    width: 100%;
+    color: grey;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) { 
+  .profile__item__list__container {
+    display: flex;
+  }
+  
+  .profile__item__list__data__container {
+    width: 50%;
+  }
+  
+  .profile__item__list__data {
+    font-size: 17px;
+  }
+  
+  .profile__item__list__separator {
+    width: 100%;
+    color: grey;
+  }
+}
+
+@media (min-width: 1201px) {
+  .profile__item__list__container {
+    display: flex;
+  }
+  
+  .profile__item__list__data__container {
+    width: 50%;
+  }
+  
+  .profile__item__list__data {
+    font-size: 17px;
+  }
+  
+  .profile__item__list__separator {
+    width: 100%;
+    color: grey;
+  }
+}

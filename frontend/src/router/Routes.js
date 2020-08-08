@@ -9,7 +9,8 @@ import EmailConfirmed from '../components/Email/EmailConfirmed';
 import NotFound from '../components/NotFound/NotFound';
 
 // Music
-import MusicPage from '../components/Music/MusicTable';
+// import MusicTable from '../components/Music/MusicTable';
+import MusicPage from '../components/Music/MusicPage';
 
 // Profile
 import ProfilePage from '../components/Profile/ProfilePage';
@@ -23,6 +24,7 @@ function Routes() {
       <Route exact path="/verificationID" component={EmailConfirm} />
       <Route exact path="/verificationID/:id" component={EmailConfirmed} />
       <Route exact path="/music" component={MusicPage} />
+      {/* <Route exact path="/music-reprod" component={MusicTable} /> */}
       <Route exact path="/profile" component={ProfilePage} />
       <Route component={NotFound} />
     </Switch>

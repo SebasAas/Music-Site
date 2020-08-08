@@ -1,20 +1,23 @@
 import React from 'react'
 
+// CSS
+import '../../assets/css/Profile/ProfileItemList.css'
+
 function ProfileItemList({ state }) {
 
-  console.log(state)
+  // console.log(state)
 
   return (
     <>
-      <div style={{ display: 'flex' }}>
-        <div style={{ width: '50%' }}>
-          <h5 className="text-muted" style={{ fontSize: '17px' }}>{state.label}</h5>
+      <div className="profile__item__list__container">
+        <div className="profile__item__list__data__container">
+          <h5 className="text-muted profile__item__list__data">{state.label}</h5>
         </div>
-        <div style={{ width: '50%' }}>
-          <h5 className="text" style={{ fontSize: '17px' }}>{state.value}</h5>
+        <div className="profile__item__list__data__container">
+          <h5 className="text profile__item__list__data">{state.value}</h5>
         </div>
       </div>
-      <hr style={{ width: '100%', color: 'grey' }} />
+      <hr className="profile__item__list__separator" />
     </>
   )
 }

@@ -1,0 +1,71 @@
+.music__table__main__container{
+  height: auto;
+  width: 100%;
+  background-color: #282828;
+}
+
+.music__table__options__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.music__table__buttons__container {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.music__table__buttons__container > .play__pause {
+  background-color: transparent;
+  height: 35px;
+  color: rgb(161, 161, 161);
+  margin: 0 10px 0 10px;
+}
+
+.music__table__buttons__container > .play__pause > svg {
+  font-size: 15px;
+  color: rgb(161, 161, 161);
+}
+
+.music__table__buttons__container > .play__pause:hover {
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+.music__table__buttons__container > button {
+  background-color: transparent;
+  border: none;
+  color: rgb(161, 161, 161);
+}
+
+.music__table__buttons__container > button:hover {
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+
+.music__table__button__volume {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.music__table__label__time {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+
+.music__table__label__time > p {
+  margin: 0;
+  padding: 0 10px 0 10px;
+}

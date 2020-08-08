@@ -1,53 +1,62 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // Redux
 import { connect } from 'react-redux';
 
-// Components
-import ProfileItemList from './ProfileItemList';
+import ProfileGralInfo from './ProfileGralInfo';
+import ProfilePaymentInfo from './ProfilePaymentInfo';
+import ProfileChangePass from './ProfileChangePass';
+
+import '../../assets/css/Profile/ProfileList.css'
 
 function ProfileList({ user }) {
+
+  const [showGralInfo, setShowGralInfo] = useState(true);
+  const [showPaymentInfo, setShowPaymentInfo] = useState(false);
+  const [showChangePass, setShowChangePass] = useState(false);
+
+  const changeShowOption = (e) => {
+    if (e.target.value === "account") {
+      setShowGralInfo(true);
+      setShowPaymentInfo(false)
+      setShowChangePass(false)
+    }
+    else if (e.target.value === "payment") {
+      setShowGralInfo(false);
+      setShowPaymentInfo(true)
+      setShowChangePass(false)
+    }
+    else {
+      setShowGralInfo(false);
+      setShowPaymentInfo(false)
+      setShowChangePass(true)
+    }
+  }
 
   if (user.currentUser === {}) return;
 
   return (
     <>
-      <div className="col-3" style={{ height: '800px', backgroundColor: '#1B1B1B' }}>
-      </div>
-      <div className="col-9" style={{ height: '800px', backgroundColor: 'whitesmoke', display: 'flex', flexDirection: "column", padding: '40px' }}>
-        <h2 style={{ textAlign: 'center', marginTop: '40px', fontFamily: 'Arial' }}>Vista General de la Cuenta</h2>
-        <h4 style={{ fontFamily: 'Arial', marginTop: '30px' }}>Perfil</h4>
-        <div style={{ display: 'flex', flexDirection: 'column', marginTop: '30px' }}>
-
-          <ProfileItemList
-            state={{
-              label: 'Nombre Completo',
-              value: user.currentUser.fullname
-            }}
-          />
-
-          <ProfileItemList
-            state={{
-              label: 'Email',
-              value: user.currentUser.email
-            }}
-          />
-
-          <ProfileItemList
-            state={{
-              label: 'Nombre de Usuario',
-              value: user.currentUser.username
-            }}
-          />
-
-          <ProfileItemList
-            state={{
-              label: 'Pais',
-              value: "Argentina"
-            }}
-          />
+      <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 profile__list__container">
+        <div className="profile__list__image__container">
+          <img src={require("../../assets/images/Email/girl.jpg")}
+            className="profile__list__image" alt="" />
         </div>
-        <button style={{ padding: '10px', border: '1px solid whitesmoke', borderRadius: '10px' }}>Editar perfil</button>
+        <div className="profile__list__container__options">
+          <hr className="profile__list__separator" />
+          <button className="profile__list__buttons__options" value="account" onClick={(e) => changeShowOption(e)}>Datos de Cuenta</button>
+          <hr className="profile__list__separator" />
+          <button className="profile__list__buttons__options" value="payment" onClick={(e) => changeShowOption(e)}>Datos de Pagos</button>
+          <hr className="profile__list__separator" />
+          <button className="profile__list__buttons__options" value="password" onClick={(e) => changeShowOption(e)}>Cambiar Contraseña</button>
+          <hr className="profile__list__separator" />
+        </div>
+      </div>
+      <div className="col-xs-12 col-sm-12 col-md-9 col-lg-9 data__list__container">
+        <h2 className="data__list__title">Vista General de la Cuenta</h2>
+        {showGralInfo && <ProfileGralInfo />}
+        {showPaymentInfo && <ProfilePaymentInfo />}
+        {showChangePass && <ProfileChangePass />}
       </div>
     </>
   )

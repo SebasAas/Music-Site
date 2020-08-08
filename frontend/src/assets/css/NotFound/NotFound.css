@@ -1,11 +1,12 @@
 .notfound__image {
-  background-image: url("../../images/NotFound/MusicNotFound.jpeg");
+  background: linear-gradient(rgb(255, 41, 149, 0.7), rgb(255, 61, 127, 0.7), rgb(255, 102, 85, 0.7), rgb(255, 95, 101, 0.7)),url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/11/08/10/istock-502324324.jpg);
   background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed; 
   height: 100vh;
   width: auto;
+  
 }
+
+
 
 .notfound__description {
   display: flex;

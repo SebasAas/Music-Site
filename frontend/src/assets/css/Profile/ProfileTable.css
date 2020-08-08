@@ -1,0 +1,36 @@
+
+@media (min-width: 0px) and (max-width: 767px){
+
+  .profile__table__container__main {
+    height: 1550px;
+    margin-bottom: 50px;
+  }
+
+  .profile__table__container__profile__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) { 
+  .profile__table__container__profile__list {
+    display: flex;
+    padding: 0 !important;
+  }
+  
+  .profile__table__container__main {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .profile__table__container__profile__list {
+    display: flex;
+    padding: 0 !important;
+  }
+  
+  .profile__table__container__main {
+    margin-bottom: 50px;
+  }
+}

@@ -2,20 +2,22 @@
   padding: 0 !important;
   margin: 0 !important;
   display: flex;
-  background-color: #EFB201 !important;
 }
 
 .banner__background__text {
-  background: linear-gradient(90deg, #EFB201, #faa307 ,#f48c06 ,#e85d04 );
+  /* background: linear-gradient(90deg, #EFB201, #faa307 ,#f48c06 ,#e85d04 ); */
+  /* background: linear-gradient(90deg, #FD5C6B, #CA4FCD, #7B69FF, #21C7FE ); */
+  /* background-color: #F0D639; */
   height: 100vh;
 }
 
 .banner__total__image {
-  background-image: url("https://content.thriveglobal.com/wp-content/uploads/2018/07/Music.jpeg");
+  /* background-image: url("https://content.thriveglobal.com/wp-content/uploads/2018/07/Music.jpeg"); */
+  background-image: url("../../images/Email/listen-music-dont-like.jpg");
   background-size: cover;
   background-position: center; 
   height: 100vh; 
-  box-shadow: 0 0 40px 30px #EFB201 inset
+  /* box-shadow: -5px 0px 5px 1px #F0D639 inset */
 }
 
 .banner__container {

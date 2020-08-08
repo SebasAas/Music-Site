@@ -7,7 +7,7 @@ function BannerPage() {
 
   return (
     <>
-      <div>
+      <div style={{ background: 'linear-gradient(130deg, #ff2995, #ff3d7f, #ff6655, #FF5F65)', zIndex: '9999999' }}>
         <div className="col-12 banner__main__container">
           <div className="d-none d-sm-block col-sm-6 col-md-6 col-lg-6 banner__total__image"></div>
           <div className="col-sm-6 col-md-6 col-lg-6 banner__background__text" >
