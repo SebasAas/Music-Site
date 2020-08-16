@@ -11,6 +11,7 @@ const middleware = [thunk];
 const persistConfig = {
   key: 'root',
   storage,
+  blacklist: ['song']
 }
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)

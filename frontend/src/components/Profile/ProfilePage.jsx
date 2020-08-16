@@ -9,7 +9,7 @@ import ProfileTable from './ProfileTable';
 import { connect } from 'react-redux';
 
 // CSS
-import '../../assets/css/Profile/ProfilePage.css';
+import 'assets/css/Profile/ProfilePage.css';
 
 function ProfilePage({ user }) {
 

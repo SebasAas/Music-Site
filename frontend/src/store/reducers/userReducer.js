@@ -12,7 +12,7 @@ export default function (state = initialState, action) {
   switch (action.type) {
     case FETCH_CURRENT_USER:
 
-      const { id, fullname, username, email, emailVerified, accessToken } = action.payload.user;
+      const { id, fullname, username, email, accessToken } = action.payload.user;
 
       return {
         ...state,

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 // CSS
-import '../../assets/css/NotFound/NotFound.css';
+import 'assets/css/NotFound/NotFound.css';
 
 function NotFound() {
   return (

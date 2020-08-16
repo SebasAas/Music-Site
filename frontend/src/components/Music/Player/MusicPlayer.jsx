@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 
 // CSS
-import '../../../assets/css/Music/Player/MusicPlayer.css'
+import 'assets/css/Music/Player/MusicPlayer.css'
 
 import { connect } from 'react-redux';
 
@@ -97,13 +97,13 @@ function MusicPlayer() {
         value={currentTimeMusic}
         onLoadedMetadata={(e) => setTimeMusic(e)}
         preload="metadata">
-        <source src="https://icecube-us-sw-841-1.icedrive.io/download?p=nvE7JjXm1uLcrWjN8NUfUFAe5GIcj7tm4YHcxD0g8PXEdxnbyx8B%2FSoR19rEO%2BIwELzs4ZecC18E8GmQBz9gnTpL0g1%2FupxmShQs7riwMZY%2Bes%2F5BOaWk5HRgzzqQpB7x0NyLxDGgd8r1TV0dOs7R5c%2BrRrxLVTPCnsXDhUMnWJdfC01IsKTQWdz81dOyLuVzK4z1iDtqG2bfd%2BqjnpG%2Fg%3D%3D" type="audio/mpeg" />
+        <source src="https://icecube-eu-279.icedrive.io/download?p=Sk4Pg9v5ogM%2FgleOwh3t3MpmfDBebDFxc%2FE2lseHWN2iGdO6p6YbQqPGyDdmF5taU86B%2BDVj%2FvK%2FX3G%2BDqUgS4gX8yXdbrTaSfwF6pq8a4XUm9arRmAYb8H0p626G23%2BOTuSL9vzE6dqmnT2usxdI32cgFHf248wSeDM%2BR54u26y8P53wdc9LNMjiNEFOEQqbudOeqkAIMtGq3UTW%2FBSLWnFYrPpNmfa9qVLX1GPZgY%3D" type="audio/mpeg" />
         <p> To listen to audio please enable JavaScript on a modern web browser</p>
       </audio>
       <div>
         <div className="music__table__main__container">
           <div className="music__table__options__container">
-            <div className="col-4">
+            <div className="col-lg-4 col-xl-4 d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
               {/* <div>
             <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-arrow-repeat" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z" />
@@ -117,7 +117,7 @@ function MusicPlayer() {
             </svg>
           </div> */}
             </div>
-            <div className="col-4 music__table__buttons__container">
+            <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4  music__table__buttons__container">
               <button>
                 <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" className="bi bi-caret-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
@@ -144,29 +144,27 @@ function MusicPlayer() {
                 </svg>
               </button>
             </div>
-            <div className="col-4 music__table__button__volume">
-              {showSVGVolume()}
-              <input type="range" defaultValue={actualVolume} onChange={(e) => setVolumen(e.target.value)} />
+
+            <div className="col-lg-4 col-xl-4 d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block">
+              <div className="music__table__button__volume">
+                {showSVGVolume()}
+                <input type="range" defaultValue={actualVolume} onChange={(e) => setVolumen(e.target.value)} />
+              </div>
             </div>
-            {/* <div className="music__table__buttons__container">
 
-            </div> */}
-
-            {/* <div className="music__table__button__volume">
-              
-            </div> */}
           </div>
-          <div className="music__table__label__time">
+          <div className="col-lg-12 col-xl-12 d-none d-md-block d-lg-block d-xl-block">
+            <div className="music__table__label__time">
+              <p>{actualTimePlaying}</p>
 
-            <p>{actualTimePlaying}</p>
+              <input style={{ width: '500px' }} type="range"
+                value={currentTimeMusic}
+                onChange={(e) => checkActualTime(e.target.value)}
+                max={maxDurationMusicSeconds}
+              />
 
-            <input style={{ width: '500px' }} type="range"
-              value={currentTimeMusic}
-              onChange={(e) => checkActualTime(e.target.value)}
-              max={maxDurationMusicSeconds}
-            />
-
-            <p>{maxDurationMusic}</p>
+              <p>{maxDurationMusic}</p>
+            </div>
           </div>
         </div>
       </div>

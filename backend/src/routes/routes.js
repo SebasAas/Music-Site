@@ -15,8 +15,13 @@ const {
 
 // Album Routes
 const {
-  findAlbums, findOneAlbum
+  findAlbums, findSongsByAlbum,
 } = require('../controllers/albumController');
+
+// Song Route
+// const {
+//   findAllSongs
+// } = require('../controllers/songController');
 
 module.exports = () => {
 
@@ -40,10 +45,10 @@ module.exports = () => {
   router.delete('/user/delete/:document', deleteUser);
 
   // Find Album
-  router.get('/album/find', findAlbums);
+  router.get('/album', findAlbums);
 
-  // Find Album
-  router.get('/album/find/:data', findOneAlbum);
+  // Find Songs by Album
+  router.get('/album/:id', findSongsByAlbum);
 
   return router;
 }

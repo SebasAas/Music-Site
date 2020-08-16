@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 // CSS
-import '../../../assets/css/Music/Sidebar/ButtonSidebar.css';
+import 'assets/css/Music/Sidebar/ButtonSidebar.css';
 
 function ButtonSidebar({ name, linkTo }) {
 

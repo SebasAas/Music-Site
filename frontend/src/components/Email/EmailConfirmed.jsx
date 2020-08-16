@@ -8,7 +8,7 @@ import '../../assets/css/Email/EmailConfirmed.css';
 
 function EmailConfirmed(props) {
 
-  const [userID, setUserID] = useState({
+  const [userID,] = useState({
     _id: props.match.params.id
   })
   const [mensaje, setMensaje] = useState("");

@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 import ButtonSidebar from './ButtonSidebar';
 
 // CSS
-import '../../../assets/css/Music/Sidebar/Sidebar.css'
+import 'assets/css/Music/Sidebar/Sidebar.css'
 
 function Sidebar() {
   return (
     <>
       <div>
         <div className="logo sidebar__logo">
-          <img src={require("../../../assets/images/Logo/logo.png")} alt="" />
+          <img src={require("assets/images/Logo/logo.png")} alt="" />
           <Link to="/">QUALIFY</Link>
         </div>
       </div>
@@ -39,4 +39,4 @@ function Sidebar() {
   )
 }
 
-export default Sidebar
+export default React.memo(Sidebar)

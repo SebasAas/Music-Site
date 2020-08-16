@@ -1,7 +1,7 @@
 import React from 'react';
 
 // CSS
-import '../../assets/css/Profile/ProfilePaymentInfo.css'
+import 'assets/css/Profile/ProfilePaymentInfo.css'
 
 function ProfilePaymentInfo() {
   return (

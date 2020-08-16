@@ -1,7 +1,7 @@
 import React from 'react'
 
 // CSS
-import '../../assets/css/Profile/ProfileItemList.css'
+import 'assets/css/Profile/ProfileItemList.css'
 
 function ProfileItemList({ state }) {
 

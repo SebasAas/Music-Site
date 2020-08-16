@@ -19,7 +19,8 @@ export const signIn = (currentUser) => async (dispatch) => {
       }
     })
     .catch((err) => {
-      alert(err.response);
+      if (err.response.data) return alert(err.response.data.message);
+      return err.response
     })
 }
 

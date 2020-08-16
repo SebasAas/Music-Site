@@ -12,6 +12,15 @@
 }
 
 .music__page__music__container {
+  overflow-y: scroll;
   height: 100vh;
   background: linear-gradient(130deg, #ff2995, #ff3d7f, #ff6655, #FF5F65)
+}
+
+.music__page__music__container::-webkit-scrollbar {
+  width: 15px;
+}
+
+.music__page__music__container::-webkit-scrollbar-thumb {
+  background-color: rgba(32, 32, 32, 0.5);
 }

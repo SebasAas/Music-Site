@@ -1,0 +1,51 @@
+/**
+ *
+ * IBM Confidential
+ *
+ * (C) Copyright IBM Corp. 2019
+ *
+ * The source code for this program is not published or otherwise
+ * divested of its trade secrets, irrespective of what has been
+ * deposited with the U. S. Copyright Office
+ *
+ * US Government Users Restricted Rights - Use, duplication or
+ * disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ **/
+
+'use strict';
+
+(function () {
+
+  window.__webpack_public_path__ = '/';
+
+  var conversation = window.conversation = {};
+
+  conversation.config = {
+    endpoints : {
+      
+      authenticate : '/rest/authenticate',
+      bluemix : '/rest/bluemix',
+      content : '/rest/content',
+      store : '/rest',
+      beta : '/rest/beta',
+      feedback : '/rest/feedback',
+      betaAboutURL : "https://www.ibm.com/developerworks/learn/cognitive/index.html",
+      betaStoreURL : "https://api.us-south.assistant.watson.cloud.ibm.com",
+      logout : "http://cloud.ibm.com/logout"
+    },
+    hosts : [{"plans":["2b85828f-ff56-451b-96df-d69ed1941a01"],"url":"us-south.assistant.watson.cloud.ibm.com"},{"plans":["805f3109-79db-4b3b-ad5a-f17273ffc4fd"],"url":"us-south.assistant.watson.cloud.ibm.com"},{"plans":["cc738855-5754-4d38-a882-25ccda899852"],"url":"assistant-us-south.watsonplatform.net"},{"plans":["0bfae505-b571-4458-8a41-0d080244312b"],"url":"us-south.assistant.watson.cloud.ibm.com"},{"plans":["6582c70c-70bb-4aa4-8568-37a5d0e89f4e"],"url":"us-south.assistant.watson.cloud.ibm.com"}],
+    regions : {"us-south":{"mccp":"https://mccp.us-south.cf.cloud.ibm.com","console":"https://cloud.ibm.com","api":"https://api.us-south.cf.cloud.ibm.com","bss":"https://accountmanagement.us-south.cf.cloud.ibm.com"}},
+    features : {"analytics":true,"overview":true,"condition-builder":true,"mcr2":true,"slot-condition":true,"mirroring":true,"simple-context-editor":true,"hard-logout":false,"mcr-jump-to":true,"synonym-recommendations":true,"beta-access-button":true,"integrations":true,"intercom-chat":false,"response-types":true,"open-entities":true,"enable-premium-features":false,"beta":false,"icp":false,"search-skill":true,"assistant-skills":true,"callouts":true,"autolearn":true,"off-topic-v2":true,"dialog-skill-options":true,"react-search":true,"react-catalog":true,"response-types-slots":true,"spell-check":true,"spell-check-default":true,"access-control":true,"web-experience":true,"assistant-skills-v2":true,"iam-adoption":true,"context-json-editor-slots":true,"react-intents":true,"react-entities":true,"export-delete":true,"pattern-entities":true,"new-entities":true,"search":true,"search-show-more":true,"catalog":true,"intent-conflicts":true,"intent-recommendations":true,"react-intent-conflicts":true,"skill-versions":true,"intercom-integration":true,"system-entities-v2":true,"system-entities-v2-default":true,"clusters":true,"one-cloud-urls":true,"hotjar-lib-loads":false,"hotjar-tracking":false,"disambiguation-premium-only":false,"cloud-logout":true,"more-options":false,"deprecated-api-warning":false,"web-experience-salesforce":true,"web-experience-zendeskweb":true,"access-control-notification":false,"clusters-assistant":true,"new-integration-panel":true,"new-intents":false,"recommendations":false,"segment-v2":true,"skill-settings":false,"suggestion-text-policy":true,"web-experience-suggestions":true},
+    languages : [{"value":"ar","label":"ARABIC","off-topic":"2017-04-21","fuzzy-match":true,"search":false,"system-entities-v2":true,"system-entities-v2-default":true},{"value":"de","label":"GERMAN","off-topic":"2017-04-21","fuzzy-match":true,"search":true,"system-entities-v2":true,"system-entities-v2-default":true},{"value":"en","label":"ENGLISH_US","off-topic":"2017-02-03","autolearn":true,"fuzzy-match":true,"search":true,"synonym-recommendations":true,"open-entities":true,"intent-recommendations":true,"spell-check":true,"spell-check-default":true,"system-entities-v2":true,"off-topic-v2":true,"system-entities-v2-default":true},{"value":"es","label":"SPANISH","off-topic":"2017-04-21","fuzzy-match":true,"search":true,"synonym-recommendations":true,"system-entities-v2":true,"system-entities-v2-default":true},{"value":"fr","label":"FRENCH","off-topic":"2017-04-21","fuzzy-match":true,"search":true,"synonym-recommendations":true,"system-entities-v2":true,"system-entities-v2-default":true,"spell-check":true,"spell-check-default":false,"open-entities":true},{"value":"it","label":"ITALIAN","off-topic":"2017-04-21","fuzzy-match":true,"search":true,"system-entities-v2":true,"system-entities-v2-default":true},{"value":"ja","label":"JAPANESE","off-topic":"2017-04-21","fuzzy-match":true,"search":true,"synonym-recommendations":true,"intent-recommendations":true,"system-entities-v2":true,"system-entities-v2-default":true},{"value":"ko","label":"KOREAN","off-topic":"2017-04-21","fuzzy-match":true,"search":true,"system-entities-v2":true,"system-entities-v2-default":true},{"value":"pt-br","label":"BRAZILIAN_PORTUGUESE","off-topic":"2017-04-21","fuzzy-match":true,"search":true,"system-entities-v2":true,"system-entities-v2-default":true},{"value":"cs","label":"CZECH","off-topic":"2017-04-21","fuzzy-match":true,"search":true,"system-entities-v2":true,"system-entities-v2-default":true},{"value":"nl","label":"DUTCH","off-topic":"2017-04-21","search":true,"fuzzy-match":true,"system-entities-v2":true,"system-entities-v2-default":true},{"value":"zh-tw","label":"CHINESE_TRADITIONAL","off-topic":"2017-04-21","search":true,"system-entities-v2":true,"system-entities-v2-default":true},{"value":"zh-cn","label":"CHINESE_SIMPLIFIED","off-topic":"2017-04-21","search":true,"system-entities-v2":true,"system-entities-v2-default":true}],
+    segment : {"key":"XroYJWPOY9jAMsZSceoCmc6bWLd6Z7iD","src":"https://cloud.ibm.com/analytics/build/bluemix-analytics.min.js"},
+    optimizely : {},
+    deployEnv : "production",
+    integrations : {"intercom":{"client_id":"fe417d6a-c124-4f3e-912f-8676c15e0e92","oauth_redirect_url":"https://us-south.assistant.watson.cloud.ibm.com"}},
+    buildInfo : {"imageTag":"ui:20200812-165706-1f6135e4b","buildTime":"165706","buildDate":"20200812","gitCommit":"1f6135e4b"},
+    webExperience : {"versionHostname":"https://assistant-web.watsonplatform.net","hostname":"https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"},
+    plusTrialLength : 30,
+    experiments : {"testAAExperimentAll":true,"testAAExperimentManagerInLite":true},
+  };
+
+})();

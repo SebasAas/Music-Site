@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import '../../assets/css/Header/HeaderHome.css'
+import 'assets/css/Header/HeaderHome.css'
 
 function Header(props) {
 
@@ -22,7 +22,10 @@ function Header(props) {
       <nav className="header__nav" style={props.style}>
         <div className="container">
           <ul className="menu" style={{ zIndex: '4' }}>
-            <li className="logo" style={{ width: '20px', height: '65px', display: 'flex', alignItems: 'center' }}> <img src={require("../../assets/images/Logo/logo.png")} style={{ height: '55px', width: '55px', objectFit: 'contain' }} alt="" /> <Link to="/" style={{ fontFamily: 'ABeeZee', color: 'white', fontSize: '28px', letterSpacing: '2px' }}>QUALIFY</Link></li>
+            <li className="logo header__home__logo__container">
+              <img src={require("assets/images/Logo/logo.png")} alt="" />
+              <Link to="/">QUALIFY</Link>
+            </li>
             <li className="item"><Link to="/">Inicio</Link></li>
             <li className="item"><Link to="/">Nosotros</Link></li>
             <li className="item"><Link to="/">Servicios</Link></li>

@@ -1,0 +1,19 @@
+.menu__responsive__container {
+  height: 50px;
+  background-color: #282828;
+}
+
+.menu__responsive__row{
+  height: 100%;
+  align-items: center;
+}
+
+.menu__responsive__options {
+  text-align: center;
+}
+
+.menu__responsive__options > svg {
+  color: white;
+    width: 1.4em;
+    height: 1.4em;
+}

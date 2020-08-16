@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import ProfileItemList from './ProfileItemList';
 
 // CSS
-import '../../assets/css/Profile/ProfileGralInfo.css'
+import 'assets/css/Profile/ProfileGralInfo.css'
 
 function ProfileGralInfo({ user }) {
   return (

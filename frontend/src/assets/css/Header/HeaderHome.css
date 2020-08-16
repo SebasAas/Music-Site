@@ -22,9 +22,31 @@ a {
 a:hover {
   text-decoration: none !important;
 }
+
+.header__home__logo__container {
+  width: 20px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.header__home__logo__container > img {
+  height: 55px;
+  width: 55px;
+  object-fit: contain;
+}
+
+.header__home__logo__container > a {
+  font-family: 'ABeeZee', Arial, Helvetica, sans-serif !important;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
 .logo a:hover {
   text-decoration: none !important;
 }
+
 .menu li {
   font-size: 16px;
   padding: 15px 5px;

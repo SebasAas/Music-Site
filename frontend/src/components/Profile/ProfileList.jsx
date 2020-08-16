@@ -7,7 +7,7 @@ import ProfileGralInfo from './ProfileGralInfo';
 import ProfilePaymentInfo from './ProfilePaymentInfo';
 import ProfileChangePass from './ProfileChangePass';
 
-import '../../assets/css/Profile/ProfileList.css'
+import 'assets/css/Profile/ProfileList.css'
 
 function ProfileList({ user }) {
 
